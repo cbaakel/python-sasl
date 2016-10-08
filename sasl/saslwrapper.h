@@ -434,7 +434,6 @@ void ClientImpl::setError(const string& context, int code, const string& text, c
 void ClientImpl::interact(sasl_interact_t* prompt)
 {
     string output;
-    char* input;
 
     if (prompt->id == SASL_CB_PASS) {
         string ppt(prompt->prompt);
