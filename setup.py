@@ -32,4 +32,5 @@ setup(name='sasl',
       packages=['sasl'],
       install_requires=['six'],
       ext_modules=[sasl_module],
+      extra_compile_args=['-fPIC'],
       include_package_data=True)
