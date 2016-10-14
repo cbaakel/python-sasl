@@ -19,6 +19,7 @@ sasl_module = Extension('sasl.saslwrapper',
                         include_dirs=["sasl"],
                         libraries=["sasl2"],
                         extra_compile_args=['-fPIC'],
+                        extra_link_args=['-fPIC'],
                         language="c++")
 setup(name='sasl',
       version='0.2.1',
