@@ -19,7 +19,7 @@
 
 #include <stdint.h>
 #include <string>
-#include <sasl.h>
+#include <sasl/sasl.h>
 #include <sstream>
 #include <stdlib.h>
 #include <string.h>
