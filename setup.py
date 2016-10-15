@@ -18,7 +18,8 @@ sasl_module = Extension('sasl.saslwrapper',
                         sources=['sasl/saslwrapper.cpp'],
                         include_dirs=["sasl"],
                         libraries=["sasl2"],
-                        language="c")
+                        extra_compile_args=["-mcmodel=large"],
+                        language="c++")
 setup(name='sasl',
       version='0.2.1',
       url="http://github.com/cloudera/python-sasl",
